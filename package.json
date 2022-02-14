@@ -1,6 +1,6 @@
 {
   "name": "gmate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Pustaka untuk pengelolaan Tes GMate",
   "main": "gmate.js",
   "scripts": {
