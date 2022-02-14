@@ -1,5 +1,5 @@
-function coba(string) {
-  return 'gmate.coba ' + string;
+exports.coba =  function coba(string) {
+  console.log("Coba GMATE");
 }
 
-export default coba;
+// export default coba
