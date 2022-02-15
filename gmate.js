@@ -24,7 +24,7 @@ function groupByKey(array, keyName='ref', targetName='seq') {
   return grouping
 }
 
-function objectify(array, keyName = "ref") {
+function objectify(array, keyName = "seq") {
   let obj = {}
   for (let item of array) obj[item[keyName]] = item
   return obj
@@ -44,9 +44,9 @@ function randomGroupKeys(group, leaders) {
   return groupKeys
 }
 
-function getTestSequence(testData, leaders) {
-  const grouping = groupByKey(testData)
-  const randomKeys = randomGroupKeys(testData, leaders)
+function getTestSequence(book, leaders) {
+  const grouping = groupByKey(book)
+  const randomKeys = randomGroupKeys(grouping, leaders)
   let sequence = []
   for (let k of randomKeys) {
     sequence.push(...grouping[k])
