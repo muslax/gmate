@@ -1,7 +1,14 @@
-// import coba from "./coba";
-// import cobra from "./cobra";
-const coba = require('./coba')
-const cobra = require('./cobra')
+// const cobra = require("./cobra.js")
+const { createTestSequence } = require("./gmate")
 
-exports.coba = coba
-exports.cobra = cobra
+// exports.coba = () => {
+//   console.log('COBA')
+// }
+
+// exports.incobra = () => {
+//   console.log('IN-COBRA')
+// }
+
+// exports.cobra = cobra
+// exports.cobris = cobris
+exports.createTestSequence = createTestSequence
